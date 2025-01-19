@@ -22,7 +22,7 @@ body {
 }
 .project-item {
     width: 20em;
-    height: 30em;
+    height: 20em;
     position: relative;
     overflow: hidden;
     cursor: pointer;
