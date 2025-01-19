@@ -12,7 +12,8 @@ body {
     background-image: linear-gradient(45deg, #f43f5e 25%, transparent 25%, transparent 75%, #f43f5e 75%, #f43f5e),
                       linear-gradient(45deg, #f43f5e 25%, transparent 25%, transparent 75%, #f43f5e 75%, #f43f5e);
     background-size: 120px 120px;
-    background-position: 30px 30px, 90px 90px;
+    /* background-position: 30px 30px, 90px 90px; */
+    background-position: 0px 0px, 60px 60px;
 }
 
 .paper-bg {
@@ -20,12 +21,13 @@ body {
     background-image: repeating-linear-gradient(#ebd5b3 0px, #ebd5b3 1px, transparent 1px, transparent 20px);
 }
 .project-item {
+    width: 20em;
+    height: 30em;
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 .project-item img {
-    width: 100%;
     height: auto;
     transition: transform 0.3s ease;
 }
