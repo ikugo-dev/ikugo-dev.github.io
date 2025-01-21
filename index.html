@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="./src/scroll.js" defer></script> -->
+    <script src="./src/scroll.js" defer></script>
 </head>
 <body class="bg-yellow-50 text-gray-800">
     <div class="snap-y snap-mandatory h-screen overflow-y-scroll">
@@ -28,7 +28,7 @@
         </nav>
 
         <!-- Hero Section -->
-        <header id="hero" class="h-screen parallax flex items-center justify-center snap-start" style="background-image: url('./images/cloud.jpg');">
+        <header id="hero" class="snap-start h-screen parallax flex items-center justify-center" style="background-image: url('./images/cloud.jpg');">
             <div class="flex items-center max-w-4xl mx-auto px-6">
                 <div class="w-48 h-64 bg-gray-300 overflow-hidden border-4 border-white mr-8">
                     <img src="https://via.placeholder.com/150" alt="Placeholder face" class="w-full h-full object-cover">
@@ -44,7 +44,7 @@
         </header>
 
         <!-- About Section -->
-        <section id="about" class="h-screen bg-teal-200 py-16 snap-start">
+        <section id="about" class="snap-start h-screen bg-teal-200 flex items-center justify-center">
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-4xl font-bold">About Me</h2>
                 <p class="mt-6 text-lg leading-relaxed">
@@ -55,15 +55,13 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="h-screen bg-rose-300 py-16 checkerboard checkerboard-section snap-start">
-
-            <div class="bg-rose-700 max-w-6xl mx-auto text-center p-2">
-            <div class="bg-rose-700 max-w-6xl mx-auto text-center p-8
-                        border-2 border-orange-200">
-                <h2 class="text-4xl font-bold text-rose-950 content">Skills</h2>
-                <div class="grid grid-cols-4">
-                    <div class="mt-6 grid gap-4 text-lg content text-orange-100">
-                        <h1 class="text-2xl font-bold text-rose-950">Languages</h1>
+        <section id="skills" class="snap-start h-screen bg-rose-300 checkerboard checkerboard-section flex items-center justify-center">
+            <div class="bg-rose-700 w-full max-w-6xl text-center p-2">
+                <div class="bg-rose-700 w-full p-10 border-2 border-orange-200">
+                    <h2 class="text-6xl font-extrabold text-orange-200 content">Skills</h2>
+                    <div class="grid grid-cols-4">
+                        <div class="mt-6 grid text-xl font-medium gap-4 content text-orange-100">
+                            <h1 class="text-3xl font-bold text-orange-200 pb-4 underline">Languages</h1>
                             <p>C</p>
                             <p>C++</p>
                             <p>GoLang</p>
@@ -72,44 +70,44 @@
                             <p>SQL</p>
                             <p>Rust</p>
                             <p>Python</p>
-                    </div>
-                    <div class="mt-6 grid gap-4 text-lg content text-orange-100">
-                        <h1 class="text-2xl font-bold text-rose-950">Web</h1>
-                        <p>JavaScript</p>
-                        <p>TypeScript</p>
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>Markdown</p>
-                        <p>.NET</p>
-                        <p>React.js</p>
-                        <p>Tailwind</p>
-                    </div>
-                    <div class="mt-6 grid gap-4 text-lg content text-orange-100">
-                        <h1 class="text-2xl font-bold text-rose-950">Databases</h1>
-                        <p>MySQL</p>
-                        <p>SQLite</p>
-                        <p>Oracle</p>
-                        <p>LocalDB</p>
-                    </div>
-                    <div class="mt-6 grid gap-4 text-lg content text-orange-100">
-                        <h1 class="text-2xl font-bold text-rose-950">Other</h1>
-                        <p>Raylib</p>
-                        <p>Git</p>
-                        <p>JSON</p>
-                        <p>XML</p>
-                        <p>Pandas</p>
-                        <p>Unity</p>
-                        <p>Godot</p>
-                        <p>Shell script</p>
-                        <p>Make</p>
+                        </div>
+                        <div class="mt-6 grid text-xl font-medium gap-4 content text-orange-100">
+                            <h1 class="text-3xl font-bold text-orange-200 pb-4 underline">Web</h1>
+                            <p>JavaScript</p>
+                            <p>TypeScript</p>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Markdown</p>
+                            <p>.NET</p>
+                            <p>React.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="mt-6 grid text-xl font-medium gap-4 content text-orange-100">
+                            <h1 class="text-3xl font-bold text-orange-200 pb-4 underline">Databases</h1>
+                            <p>MySQL</p>
+                            <p>SQLite</p>
+                            <p>Oracle</p>
+                            <p>LocalDB</p>
+                        </div>
+                        <div class="mt-6 grid text-xl font-medium gap-4 content text-orange-100">
+                            <h1 class="text-3xl font-bold text-orange-200 pb-4 underline">Other</h1>
+                            <p>Raylib</p>
+                            <p>Git</p>
+                            <p>JSON</p>
+                            <p>XML</p>
+                            <p>Pandas</p>
+                            <p>Unity</p>
+                            <p>Godot</p>
+                            <p>Shell script</p>
+                            <p>Make</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="h-screen bg-blue-300 py-16 snap-start">
+        <section id="projects" class="snap-start h-screen bg-[#b0de90] -300 py-16 flex items-center justify-center">
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-4xl font-bold">Projects</h2>
                 <div class="mt-8 grid grid-cols-3 gap-6">
@@ -140,16 +138,10 @@
                             </div>
                         </a>
                     </div>
-
-
-
-
-
-
                     <div class="project-item">
                         <h3 class="text-2xl font-bold pb-4">Huffman Coding</h3>
                         <a href="https://github.com/ikugo-dev/huffman-coding" target="_blank">
-                            <!-- <img src="./images/projects/dom.png" alt="Huffman Coding"> -->
+                            <img src="./images/projects/huffman.png" alt="Huffman Coding">
                             <div class="overlay">
                             <p class="text-sm mt-2">A CLI tool for encoding or decoding .txt files using the huffman algorithm</p>
                             </div>
@@ -158,7 +150,7 @@
                     <div class="project-item">
                         <h3 class="text-2xl font-bold pb-4">Bencode Parser</h3>
                         <a href="https://github.com/ikugo-dev/bencode-parser" target="_blank">
-                            <!-- <img src="./images/projects/dom.png" alt="Bencode Parser"> -->
+                            <img src="./images/projects/bencode.png" alt="Bencode Parser">
                             <div class="overlay">
                             <p class="text-sm mt-2">Two bencode parser libraries for C and C++</p>
                             </div>
@@ -167,7 +159,7 @@
                     <div class="project-item">
                         <h3 class="text-2xl font-bold pb-4">Config Files</h3>
                         <a href="https://github.com/ikugo-dev/.config" target="_blank">
-                            <!-- <img src="./images/projects/dom.png" alt="Just some config files"> -->
+                            <img src="./images/projects/config.png" alt="Just some config files">
                             <div class="overlay">
                             <p class="text-sm mt-2">Just some .config files, but you can find more projects on my github</p>
                             </div>
@@ -178,7 +170,8 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="h-screen bg-orange-200 py-16 paper-bg snap-start">
+        <section id="contact" class="snap-start h-screen bg-rose-300 py-16 flex items-center justify-center">
+            <div class="h-screen w-9/12 flex items-center justify-center paper-bg">
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-4xl font-bold">Contact</h2>
                 <p class="mt-6 text-lg">Connect with me on these platforms:</p>
@@ -188,6 +181,7 @@
                     <a href="https://instagram.com/archmagealex" class="text-lg font-bold underline">Instagram</a>
                     <a href="mailto:aleksandarristic503@gmail.com" class="text-lg font-bold underline">Email</a>
                 </div>
+            </div>
             </div>
         </section>
 

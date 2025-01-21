@@ -1,6 +1,5 @@
 body {
     font-family: 'League Spartan', sans-serif;
-    /* scroll-behavior: smooth; */
 }
 .parallax {
     background-attachment: fixed;
@@ -17,8 +16,11 @@ body {
 }
 
 .paper-bg {
-    background: #fffaf0;
-    background-image: repeating-linear-gradient(#ebd5b3 0px, #ebd5b3 1px, transparent 1px, transparent 20px);
+    /* background: #fffaf0; */
+    /* background-image: repeating-linear-gradient(#ebd5b3 0px, #ebd5b3 1px, transparent 1px, transparent 20px); */
+    background-image: url( '../images/paper.svg' );
+    background-position: center; 
+    background-size: 100% auto;
 }
 .project-item {
     width: 20em;
