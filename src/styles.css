@@ -1,6 +1,15 @@
 body {
     font-family: 'League Spartan', sans-serif;
 }
+
+.bg-fabric {
+/* background-color: #77c259; */
+/* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
+/* background-color: #f2c71d; */
+/* background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png"); */
+background-color: #bee8b5;
+background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -15,7 +24,7 @@ body {
     background-position: 0px 0px, 60px 60px;
 }
 
-.paper-bg {
+.bg-paper {
     /* background: #fffaf0; */
     /* background-image: repeating-linear-gradient(#ebd5b3 0px, #ebd5b3 1px, transparent 1px, transparent 20px); */
     background-image: url( '../images/paper.svg' );
