@@ -12,9 +12,9 @@
   }
 }
 
-.bg-fabric {
+.bg-cartographer {
     background-color: #bee8b5;
-    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-image: url("../images/cartographer.png");
 }
 .parallax {
     background-attachment: fixed;
