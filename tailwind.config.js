@@ -4,12 +4,10 @@ module.exports = {
     theme: {
         extend: {
             scrollBehavior: ['smooth'],
+            fontFamily: {
+                'display': ['League Spartan', 'ui-monospace'],
+            },
         },
-        fontFamily: {
-            'display': ['League Spartan', 'ui-monospace'],
-        }
     },
     plugins: [],
 }
-
-

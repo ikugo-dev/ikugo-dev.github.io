@@ -1,5 +1,15 @@
-body {
+@font-face {
+  font-family: 'League Spartan';
+  src: url('./LeagueSpartan-VariableFont.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
     font-family: 'League Spartan', sans-serif;
+  }
 }
 
 .bg-fabric {
