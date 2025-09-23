@@ -12,10 +12,10 @@
   }
 }
 
-.bg-cartographer {
-    background-color: #bee8b5;
-    background-image: url("../images/cartographer.webp");
+.bg-leather {
+    background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
 }
+
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -41,12 +41,13 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    margin: 2em;
+    transition: transform 0.3s ease;
 }
 .project-item img {
     height: auto;
-    transition: transform 0.3s ease;
 }
-.project-item:hover img {
+.project-item:hover {
     transform: scale(1.1);
 }
 .project-item .overlay {
@@ -66,4 +67,8 @@
 }
 .project-item:hover .overlay {
     opacity: 1;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;         /* freeze */
 }
