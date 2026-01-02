@@ -3,9 +3,9 @@
         style="background-image: url('/images/psych.png');">
         <div class="mx-auto text-center">
             <h2 class="text-5xl font-bold">Projects</h2>
-            <div class="w-full max-w-screen-lg mx-auto">
+            <div class="w-full max-w-screen-xl mx-auto">
                 <Carousel v-bind="carouselConfig">
-                    <Slide v-for="(project, i) in projects" :key="i">
+                    <Slide v-for="(project, i) in projectsWithRotation" :key="i">
                         <div class="carousel__item">
                             <Project :project="project" />
                         </div>
@@ -26,8 +26,11 @@ import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 const carouselConfig = {
-    itemsToShow: 2.5,
-    wrapAround: true
+    autoplay: 1500,
+    pauseAutoplayOnHover: true,
+    itemsToShow: 3,
+    wrapAround: true, // when wrapping Math.random() breaks rotation
+    mouseWheel: true,
 }
 
 import Project from "./Project.vue"
@@ -75,6 +78,12 @@ const projects: project[] = [
         description: 'HTTPS WebSocket (aka. WSS)<br>chat site served on local IP'
     }
 ];
+const rotations = ["rotate-1", "rotate-2", "rotate-3", "rotate-6", "-rotate-1", "-rotate-2", "-rotate-3", "-rotate-6"];
+const projectsWithRotation = projects.map((p, i) => ({
+    ...p,
+    rotationClass: rotations[i * 3 % rotations.length],
+}))
+
 </script>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="project-item">
+    <div :class="['project-item', project.rotationClass]">
         <h3 class="text-2xl font-bold pb-4">{{ project.title }}</h3>
         <a :href="project.url" target="_blank">
             <img :src="project.image" :alt="project.title">
@@ -15,6 +15,7 @@ const { project } = defineProps<{
         url: string;
         image: string;
         description: string;
+        rotationClass: string
     };
 }>();
 </script>

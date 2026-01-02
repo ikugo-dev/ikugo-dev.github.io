@@ -9,7 +9,7 @@
                 </h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="p-6 bg-red-200 shadow-2xl -rotate-3">
+                <div class="p-6 bg-red-200 shadow-2xl">
                     <h3 class="text-3xl font-bold text-emerald-950 mb-4  underline decoration-dotted decoration-4">
                         Who I Am
                     </h3>
