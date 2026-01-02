@@ -3,14 +3,41 @@
         style="background-image: url('/images/psych.png');">
         <div class="mx-auto text-center">
             <h2 class="text-5xl font-bold">Projects</h2>
-            <Project v-for="(project, i) in projects" :key="i" :project="project" />
+            <div class="w-full max-w-screen-lg mx-auto">
+                <Carousel v-bind="carouselConfig">
+                    <Slide v-for="(project, i) in projects" :key="i">
+                        <div class="carousel__item">
+                            <Project :project="project" />
+                        </div>
+                    </Slide>
+                    <template #addons>
+                        <Navigation />
+                        <Pagination />
+                    </template>
+                </Carousel>
+            </div>
         </div>
     </section>
 </template>
 
-<script setup>
+
+<script setup lang="ts">
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
+const carouselConfig = {
+    itemsToShow: 2.5,
+    wrapAround: true
+}
+
 import Project from "./Project.vue"
-const projects = [
+interface project {
+    title: string
+    url: string,
+    image: string,
+    description: string,
+}
+const projects: project[] = [
     {
         title: 'DOM Visualizer',
         url: 'https://github.com/ikugo-dev/DOM-visualizer',
@@ -49,3 +76,5 @@ const projects = [
     }
 ];
 </script>
+
+<style scoped></style>
