@@ -1,0 +1,51 @@
+<template>
+    <section id="projects" class="snap-start h-screen py-16 flex items-center justify-center"
+        style="background-image: url('/images/psych.png');">
+        <div class="mx-auto text-center">
+            <h2 class="text-5xl font-bold">Projects</h2>
+            <Project v-for="(project, i) in projects" :key="i" :project="project" />
+        </div>
+    </section>
+</template>
+
+<script setup>
+import Project from "./Project.vue"
+const projects = [
+    {
+        title: 'DOM Visualizer',
+        url: 'https://github.com/ikugo-dev/DOM-visualizer',
+        image: '/images/projects/dom-visualizer.webp',
+        description: 'Website with backend golang parser for any XML-like text'
+    },
+    {
+        title: 'Nobonoko Generator',
+        url: 'https://github.com/ikugo-dev/nobonoko-generator',
+        image: '/images/projects/nobonoko.webp',
+        description: 'Desktop app that transforms images<br>into nobonoko-esque album covers'
+    },
+    {
+        title: 'Simple Bezier Curves',
+        url: 'https://github.com/ikugo-dev/simple-bezier-curves',
+        image: '/images/projects/bezier.webp',
+        description: 'A simple visualizer for dynamic<br>bezier curves using raylib'
+    },
+    {
+        title: 'Huffman Coding',
+        url: 'https://github.com/ikugo-dev/huffman-coding',
+        image: '/images/projects/huffman.webp',
+        description: 'A CLI tool for encoding or decoding<br>.txt files using the huffman algorithm'
+    },
+    {
+        title: 'Bencode Parser',
+        url: 'https://github.com/ikugo-dev/bencode-parser',
+        image: '/images/projects/bencode.webp',
+        description: 'Bencode parser libraries for C++'
+    },
+    {
+        title: 'LAN Chat',
+        url: 'https://github.com/ikugo-dev/lan-chat',
+        image: '/images/projects/lan-chat.webp',
+        description: 'HTTPS WebSocket (aka. WSS)<br>chat site served on local IP'
+    }
+];
+</script>
