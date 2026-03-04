@@ -18,8 +18,9 @@ import Skills from './components/Skills.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import MobileWarning from './components/MobileWarning.vue'
-import { onMounted } from 'vue'
-onMounted(() => {
+import { onMounted, nextTick } from 'vue'
+onMounted(async () => {
+    await nextTick();
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
