@@ -8,7 +8,7 @@
                     <a href="https://github.com/ikugo-dev" class="text-lg font-bold underline">GitHub</a>
                     <a href="https://www.linkedin.com/in/aleksandarristic503"
                         class="text-lg font-bold underline">LinkedIn</a>
-                    <a href="https://instagram.com/archmagealex" class="text-lg font-bold underline">Instagram</a>
+                    <!--- <a href="https://instagram.com/archmagealex" class="text-lg font-bold underline">Instagram</a> --->
                     <a href="mailto:aleksandarristic503@gmail.com" class="text-lg font-bold underline">Email</a>
                 </div>
             </div>

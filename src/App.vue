@@ -18,4 +18,15 @@ import Skills from './components/Skills.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import MobileWarning from './components/MobileWarning.vue'
+import { onMounted } from 'vue'
+onMounted(() => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+            });
+        });
+    });
+});
 </script>
