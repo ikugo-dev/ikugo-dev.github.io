@@ -21,16 +21,19 @@ interface skill {
 const allSkills: skill[] = [{
     name: "Languages",
     skills: [
+        "GoLang",
         "C & C++",
         "TypeScript & JS",
-        "GoLang",
+        "C#",
         "Java",
         "Python",
+        "PHP",
     ],
 }, {
     name: "Backend",
     skills: [
         "Express.js",
+        "ASP.NET",
         "Spring Boot",
         "MongoDB",
         "SQLite",
@@ -47,8 +50,10 @@ const allSkills: skill[] = [{
 }, {
     name: "Other",
     skills: [
+        "Linux",
+        "Bash",
         "Raylib & Raygui",
-        "Bash script",
+        "Docker",
         "Makefile",
         "Markdown",
     ],
